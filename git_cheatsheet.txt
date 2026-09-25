@@ -2,6 +2,14 @@ git commit -m "message": Saves your staged code snapshot to local history with a
 git branch <name>: Creates a new development timeline (omit name to just list all local branches).
 git pull <remote> <branch>: Downloads latest updates from GitHub and immediately merges them into your code.
 git push <remote> <branch>: Sends your local saved snapshots up to GitHub for others to see.
+    Note on -u <remote> <branch>: Links your local branch to the remote branch so you can just type git push next time.
 git merge <branch>: Combines the history and files of another branch into your current active branch.
 git rebase <branch>: Moves your branch's starting point to a newer commit, keeping history linear.
 git fetch <remote> <branch>: Downloads new history to your hidden local database without touching your files.
+git add <file>: Stages your modified file changes to prepare them for the next commit.
+git status: Shows which files are modified, staged, or untracked in your workspace.
+git log: Lists the chronological history of all commits made in the active branch.
+git checkout <branch-name>: (1 Argument) Shifts your entire terminal workspace to a different branch timeline.
+git checkout -b <branch-name>: (2 Arguments) Creates a brand new branch and instantly switches you into it.
+git checkout -- <file-path>: (2+ Arguments) Discards all unsaved changes to a specific file, resetting it completely.
+git diff: Shows line-by-line file changes that have been modified but not yet staged.
