@@ -26,6 +26,7 @@ int main(void) {
   ret1 = gpio_pin_configure_dt(&led1, GPIO_OUTPUT_ACTIVE);
   ret2 = gpio_pin_configure_dt(&led2, GPIO_OUTPUT_ACTIVE);
   ret3 = gpio_pin_configure_dt(&led3, GPIO_OUTPUT_ACTIVE);
+  
   if (ret0 < 0) {
     return(ret0);
   }
